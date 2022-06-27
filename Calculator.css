@@ -1,0 +1,59 @@
+
+/* general styles */
+
+html{
+    font-size: 10px;
+}
+
+article{
+    width: 30rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* font */
+
+
+
+.num{
+    font-size: 6rem;
+}
+
+/* calc-display */
+
+.calc-display{
+    box-sizing: border-box;
+    width: 30rem;
+    height: 8rem;
+    font-size: 6rem;
+    border: 2px solid black;
+}
+
+/* section */
+
+section{
+    display: grid;
+    grid-template-columns: repeat(5, 5fr);
+    grid-template-rows: repeat(5, 5rem);
+}
+
+/* buttons */
+
+button{
+    font-size: 2rem;
+}
+
+/* header */
+
+header{
+    background-color: black;
+    height: 8rem;
+    margin-bottom: 5rem;
+}
+
+h1{
+    font-size: 4rem;
+    font-family: cursive;
+    color: white;
+    margin: 0;
+}
