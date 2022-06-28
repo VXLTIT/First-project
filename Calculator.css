@@ -1,59 +1,96 @@
 
 /* general styles */
 
-html{
+html {
     font-size: 10px;
+    background-color: white;
 }
 
-article{
+article {
     width: 30rem;
     text-align: center;
     margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 2.7rem;
+    background-color: rgb(68, 67, 67);
+}
+
+body {
+    margin: 0;
 }
 
 /* font */
 
-
-
-.num{
-    font-size: 6rem;
+p{
+    margin: 0;
 }
 
 /* calc-display */
 
-.calc-display{
+.calc-display {
     box-sizing: border-box;
     width: 30rem;
-    height: 8rem;
+    height: 10rem;
     font-size: 6rem;
     border: 2px solid black;
+    border-radius: 2.5rem;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: rgb(190, 190, 190);
 }
 
-/* section */
+/* section grid */
 
-section{
+section {
     display: grid;
     grid-template-columns: repeat(5, 5fr);
-    grid-template-rows: repeat(5, 5rem);
+    grid-template-rows: repeat(4, 5rem);
+    grid-gap: 0.3rem;
 }
 
 /* buttons */
 
-button{
+section button {
     font-size: 2rem;
+    border: 0.1rem solid black;
+    border-radius: 3rem;
 }
+
+.operator {
+    background-color: rgb(133, 130, 128);
+}
+
+.clean {
+    background-color: rgb(41, 40, 40);
+}
+
 
 /* header */
 
-header{
+header {
     background-color: black;
     height: 8rem;
     margin-bottom: 5rem;
+    display: flex;
 }
 
-h1{
+h1 {
     font-size: 4rem;
     font-family: cursive;
     color: white;
     margin: 0;
+    line-height: 8rem;
+    padding-left: 2rem;
+}
+
+header button {
+    padding: 0;
+    border: 0;
+    margin-left: auto;
+    margin-right: 2rem;
+    background-color: black;
+    color: white;
+    height: 3rem;
+    line-height: 8rem;
 }

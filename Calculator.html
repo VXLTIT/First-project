@@ -14,39 +14,45 @@
 
         <header>
             <h1>Calculator</h1>
+            <button>Dark theme</button>
         </header>
 
         <article>
-            <div class="calc-display"><p class="num"></p></div>
+            <div class="calc-display"></div>
         <section>
-            <button>C</button>
-            <button>+/-</button>
-            <button>%</button>
-            <button>&#8730;</button>
-            <button>x<sup>2</sup></button>
+            <button class="clean">C</button>
+            <button class="operator">+/-</button>
+            <button class="operator">%</button>
+            <button class="operator">&#8730;</button>
+            <button class="operator">x<sup>2</sup></button>
             <button>7</button>
             <button>8</button>
             <button>9</button>
-            <button>&#247;</button>
-            <button>&#xD7;</button>
+            <button class="operator">&#247;</button>
+            <button class="operator">&#xD7;</button>
             <button>4</button>
             <button>5</button>
             <button>6</button>
-            <button>-</button>
-            <button>+</button>
+            <button class="operator">-</button>
+            <button class="operator">+</button>
             <button>1</button>
             <button>2</button>
             <button>3</button>
             <button>0</button>
-            <button>=</button>
-
+            <button class="operator">=</button>
         </section>
 
         </article>
 
         <script>
 
+            let btn;
+            btn = document.querySelector('button');
 
+            let para, div;
+            para = document.createElement('p');
+            div = document.querySelector('div');
+            div.appendChild(para);
 
         </script>
 
