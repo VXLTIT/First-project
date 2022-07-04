@@ -45,6 +45,8 @@
     div = document.querySelector('div');
     div.appendChild(para);
 
+    para.style.height = '8rem'
+
 // Calculator buttons
 
     let zero, one, two, three,
@@ -63,6 +65,29 @@
 
     two = document.querySelector('#two');
     two.addEventListener('click', twoFunction);
+
+    three = document.querySelector('#three');
+    three.addEventListener('click', threeFunction);
+
+    four = document.querySelector('#four');
+    four.addEventListener('click', fourFunction);
+
+    five = document.querySelector('#five');
+    five.addEventListener('click', fiveFunction);
+
+    six = document.querySelector('#six');
+    six.addEventListener('click', sixFunction);
+
+    seven = document.querySelector('#seven');
+    seven.addEventListener('click', sevenFunction);
+
+    eight = document.querySelector('#eight');
+    eight.addEventListener('click', eightFunction);
+
+    nine = document.querySelector('#nine');
+    nine.addEventListener('click', nineFunction)
+
+
 
     plus = document.querySelector('#plus');
     plus.addEventListener('click', plusFunction);
@@ -98,11 +123,69 @@
             para.textContent += num;
     }
 
+    function threeFunction() {
+        let symbol = '3',
+            num = '';
+
+            num += symbol;
+            para.textContent += num;
+    }
+
+    function fourFunction() {
+        let symbol = '4',
+            num = '';
+
+            num += symbol;
+            para.textContent += num;
+    }
+
+    function fiveFunction() {
+        let symbol = '5',
+            num = '';
+
+            num += symbol;
+            para.textContent += num;
+    }
+
+    function sixFunction() {
+        let symbol = '6',
+            num = '';
+
+            num += symbol;
+            para.textContent += num;
+    }
+
+    function sevenFunction() {
+        let symbol = '7',
+            num = '';
+
+            num += symbol;
+            para.textContent += num;
+    }
+
+    function eightFunction() {
+        let symbol = '8';
+            num = '';
+
+            num += symbol;
+            para.textContent += num;
+    }
+    
+    function nineFunction() {
+        let symbol = '9',
+            num = '';
+
+            num += symbol;
+            para.textContent += num;
+    }
+
+
+
     function plusFunction() {
         let symbol = '+'
             num = '';
 
-            num = num + ' ' + ' ' + symbol;
+            num = num + ' ' + symbol + ' ';
             para.textContent += num;
     }
 
