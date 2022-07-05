@@ -4,12 +4,14 @@
     let btn, 
     htmlDoc, 
     header1,
-    theme;
+    theme,
+    github;
 
     theme = 'white'
     btn = document.querySelector('button');
     header1 = document.querySelector('h1');
     htmlDoc = document.querySelector('html');
+    github = document.querySelector('.github');
     btn.addEventListener('click', changeTheme);
 
 
@@ -28,6 +30,7 @@
         htmlDoc.style.backgroundColor = '#252424';
         btn.style.color = '#252424';
         header1.style.color = '#252424';
+        github.style.color = '#252424';
     }
 
     let changeWhite = changeThemeWhite;
@@ -36,8 +39,9 @@
         htmlDoc.style.backgroundColor = 'white';
         btn.style.color = 'white';
         header1.style.color = 'white';
-
+        github.style.color = 'white';
     }
+
 // Calculator display
 
     let para, div, bod;
@@ -91,6 +95,15 @@
 
     plus = document.querySelector('#plus');
     plus.addEventListener('click', plusFunction);
+
+    minus = document.querySelector('#minus');
+    minus.addEventListener('click', minusFunction);
+
+    multiply = document.querySelector('#multiply');
+    multiply.addEventListener('click', multiplyfunction);
+
+    division = document.querySelector('#division');
+    division.addEventListener('click', divisionFunction);
     
 
     clean = document.querySelector('.clean');
@@ -164,7 +177,7 @@
     }
 
     function eightFunction() {
-        let symbol = '8';
+        let symbol = '8',
             num = '';
 
             num += symbol;
@@ -182,12 +195,37 @@
 
 
     function plusFunction() {
-        let symbol = '+'
+        let symbol = '+',
             num = '';
 
             num = num + ' ' + symbol + ' ';
             para.textContent += num;
     }
+
+    function minusFunction() {
+        let symbol = '-',
+            num = '';
+
+            num = num + ' ' + symbol + ' ';
+            para.textContent += num;
+    }
+
+    function multiplyfunction() {
+        let symbol = '×',
+            num = '';
+
+            num = num + ' ' + symbol + ' ';
+            para.textContent += num;
+    }
+    
+    function divisionFunction() {
+        let symbol = '÷',
+            num = '';
+
+            num = num + ' ' + symbol + ' ';
+            para.textContent += num;
+    }
+
 
     function cleanFunction() {
         para.textContent = ''
