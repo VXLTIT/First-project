@@ -118,6 +118,7 @@
 
         num += symbol;
         para.textContent += num;
+        numbers = para.textContent;
     }
 
     function oneFunction() {
@@ -126,6 +127,7 @@
 
         num += symbol;
         para.textContent += num;
+        numbers = para.textContent;
     }
 
     function twoFunction() {
@@ -134,6 +136,7 @@
 
             num += symbol;
             para.textContent += num;
+            numbers = para.textContent;
     }
 
     function threeFunction() {
@@ -142,6 +145,7 @@
 
             num += symbol;
             para.textContent += num;
+            numbers = para.textContent;
     }
 
     function fourFunction() {
@@ -150,6 +154,7 @@
 
             num += symbol;
             para.textContent += num;
+            numbers = para.textContent;
     }
 
     function fiveFunction() {
@@ -158,6 +163,7 @@
 
             num += symbol;
             para.textContent += num;
+            numbers = para.textContent;
     }
 
     function sixFunction() {
@@ -166,6 +172,7 @@
 
             num += symbol;
             para.textContent += num;
+            numbers = para.textContent;
     }
 
     function sevenFunction() {
@@ -174,6 +181,7 @@
 
             num += symbol;
             para.textContent += num;
+            numbers = para.textContent;
     }
 
     function eightFunction() {
@@ -182,6 +190,7 @@
 
             num += symbol;
             para.textContent += num;
+            numbers = para.textContent;
     }
     
     function nineFunction() {
@@ -190,6 +199,7 @@
 
             num += symbol;
             para.textContent += num;
+            numbers = para.textContent;
     }
 
 
@@ -200,6 +210,7 @@
 
             num = num + ' ' + symbol + ' ';
             para.textContent += num;
+            numbers = para.textContent;
     }
 
     function minusFunction() {
@@ -208,6 +219,7 @@
 
             num = num + ' ' + symbol + ' ';
             para.textContent += num;
+            numbers = para.textContent;
     }
 
     function multiplyfunction() {
@@ -216,6 +228,7 @@
 
             num = num + ' ' + symbol + ' ';
             para.textContent += num;
+            numbers = para.textContent;
     }
     
     function divisionFunction() {
@@ -224,10 +237,15 @@
 
             num = num + ' ' + symbol + ' ';
             para.textContent += num;
+            numbers = para.textContent;
     }
 
 
     function cleanFunction() {
         para.textContent = ''
     }
+
+
+// calculator work
+
 
